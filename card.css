@@ -1,0 +1,859 @@
+
+ * {
+   margin: 0;
+   padding: 0;
+   /* box-sizing: border-box; */
+   z-index: 0;
+ }
+
+ body {
+   margin: 0;
+   font-family: 'Google Sans';
+ }
+
+ /* 
+main{
+    position: relative;
+} */
+ .main-nav {
+   display: flex;
+   /* min-height: 8vh; */
+   /*padding:20px;*/
+   /*justify-content: space-around;*/
+   transition: all 0.5s;
+   /* box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5); */
+   background-color: #ffffff;
+   /* height: 80px; */
+   z-index: 10;
+ }
+
+ .main-logo {
+   padding: 15px;
+   width: 100vh;
+ }
+
+ .main-logo img {
+   transform: translateX(10%);
+   max-width: 100%;
+   height: auto;
+ }
+
+ .main-ul {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   transition: all 0.3s;
+   margin-left: 10%;
+   margin-right: 10%;
+ }
+
+ .main-ul>li {
+   /* font-size: 1.2rem; */
+   padding: 20px;
+   list-style: none;
+ }
+
+ a {
+   font-size: 150%;
+   text-decoration: none;
+   color: #3a3939;
+ }
+
+ .a-hover-effect:hover {
+   font-weight: 600;
+   font-size: large;
+   /* border-bottom: #3a3939 0.125em solid; */
+   /* box-shadow: rgba(0,0,0,0.8) 0px 1px 1px,inset rgba(0,0,0,0.15) 0px 1px 1px; */
+ }
+
+ .burger-logo {
+   display: none;
+   cursor: pointer;
+ }
+
+ .burger-logo div {
+   display: flex;
+   justify-content: space-around;
+   background-color: #3a3939;
+   width: 25px;
+   height: 2px;
+   margin: 5px;
+   transform: translateY(27px);
+   transition: all 0.3s ease;
+ }
+
+ .sticky-nav-bar {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 100;
+ }
+
+
+
+ .grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+   gap: 10px;
+   /* margin:20px 10px; */
+ }
+
+
+ @media screen and (max-width:768px) {
+
+   body {
+     overflow-x: hidden;
+   }
+
+   .main-ul {
+
+     position: absolute;
+     height: 100vh;
+
+     top: 0;
+     background: url(img/tele_girl.jpeg) no-repeat;
+     background-size: 100%;
+     float: left;
+     background-position: right -24vw bottom;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     width: 100%;
+     justify-content: center;
+     transform: translateX(100%);
+     transition: transform 0.5s ease-in;
+     background-color: #D2E3FC;
+   }
+
+   .menu-class {
+     border-top: 2px solid #D2E3FC;
+     border-right: 2px solid #D2E3FC;
+     border-bottom: 2px solid #D2E3FC;
+     border-radius: 0;
+     width: 60vw;
+
+     margin: 10px;
+     padding: 10px;
+     border-radius: 0 30px 30px 0;
+     background-color: #ffffff;
+     text-align: center;
+   }
+
+   .menu-class a {
+
+     font-weight: bold;
+   }
+
+   /* .main-ul li{
+        opacity: 0;
+    }    */
+   .burger-logo {
+     display: block;
+     position: relative;
+     transform: translateX(-100%);
+     /* transform: translateY(-10px); */
+   }
+
+   .projects button {
+     transform: translateX(20%);
+   }
+
+   .button-flex {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+     gap: 20px;
+     box-sizing: border-box;
+     max-width: 100%;
+     /* margin:20px 10px; */
+   }
+
+
+
+ }
+
+
+ .activate-nav-mobile {
+   transform: translateX(0%);
+ }
+
+ .cross .line1 {
+   transform: rotate(-45deg) translate(-35px, 8px);
+   background-color: white;
+ }
+
+ .cross .line2 {
+   opacity: 0;
+ }
+
+ .cross .line3 {
+   transform: rotate(45deg) translate(-1px, 25px);
+   background-color: white;
+ }
+
+ .add-shadow {
+   box-shadow: 0px 2px 2px 0px rgba(60, 64, 67, 0.3);
+ }
+
+
+
+
+
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: center;
+    padding: 15px;
+  }
+  
+  
+
+
+
+  
+  
+  body {
+              background-color:white;
+              font-family:'Google Sans';
+          }
+          .id-card-holder {
+              bottom: 10px;
+              height:200px;
+              width: 205px;
+              
+              margin: 0 auto;
+              border-radius: 5px;
+              position: relative;
+              margin-top: 5%;
+          }
+          .id-card-holder:after {
+              bottom: 10px;
+              width: 7px;
+              display: block;
+              background-color: #0a0a0a;
+              height: 100px;
+              position: absolute;
+              top: 105px;
+              border-radius: 0 5px 5px 0;
+               height: 195.82px;
+               width: 50px;
+          }
+          .id-card-holder:before {
+              bottom: 10px;
+               width: 7px;
+              display: block;
+              background-color: #0a0a0a;
+              height: 100px;
+              position: absolute;
+              top: 105px;
+              border-radius: 0 5px 5px 0;
+               height: 195.82px;
+               width: 50px;
+          }
+          
+          .id-card img {
+              margin: 0 auto;
+          }
+          .header img {
+              width: 100px;
+              margin-top: 15px;
+          }
+          .photo img {
+              width: 80px;
+              margin-top: 15px;
+          }
+          h2 {
+              font-size: 15px;
+              margin: 5px 0;
+          }
+          h3 {
+              font-size: 12px;
+              margin: 2.5px 0;
+              font-weight: 300;
+              text-align: center;
+          }
+          .qr-code img {
+              width: 50px;
+          }
+          p {
+              font-size: 5px;
+              margin: 2px;
+          }
+          .id-card-hook {
+              background-color: #FBBC04;
+              width: 70px;
+              margin: 0 auto;
+              height: 15px;
+              border-radius: 5px 5px 0 0;
+          }
+          .id-card-hook:after {
+              content: '';
+              background-color:  #FBBC04;
+              width: 47px;
+              height: 6px;
+              display: block;
+              margin: 0px auto;
+              position: relative;
+              top: 6px;
+              border-radius: 4px;
+          }
+          .id-card-tag-strip {
+              width: 45px;
+              height: 40px;
+              background-color: #FBBC04;
+              margin: 0 auto;
+              border-radius: 5px;
+              position: relative;
+              top: 9px;
+              z-index: 1;
+              border: 1px solid #4285F4;
+          }
+          .id-card-tag-strip:after {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 1px;
+              background-color:#FBBC04;
+              position: relative;
+              top: 10px;
+          }
+          .id-card-tag {
+              width: 0;
+              height: 0;
+              border-left: 100px solid transparent;
+              border-right: 100px solid transparent;
+              border-top: 100px solid #4285F4;
+              margin: -10px auto -30px auto;
+          }
+          .id-card-tag:after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 0;
+              border-left: 50px solid transparent;
+              border-right: 50px solid transparent;
+              border-top: 100px solid #d7d6d3;
+              margin: -10px auto -30px auto;
+              position: relative;
+              top: -130px;
+              left: -50px;
+          }
+          
+          
+          .id-card2 {
+            height: 124.5px;
+            width: 79.78px;
+            background-color: #FFF;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+            
+  
+          }
+          .id-card3{
+            height: 124.5px;
+            width: 79.78px;
+            background-color: #FFF;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+          }
+          .id-card4{
+            height: 133.7px;
+            width: 88px;
+            background-color: #F2F2F2;
+            box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.5);
+            padding-left:2px;
+            text-align: center;
+          }
+          .id-card5{
+            height: 124.5px;
+            width: 83.78px;
+            background-color: #FFF;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+
+          }
+          
+          
+          .id-card{
+              height: 133.7px;
+              width: 85px;
+              background-color: #F2F2F2;
+               box-shadow: 0 2px 7px 0 rgba(0,0,0,0.5);
+               padding-left:2px;
+              text-align: center;
+          
+            }
+            .id-card1{
+               height: 123.7px;
+               width: 85px;
+               background-color: #F2F2F2;
+               box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.5);
+               padding-left:2px;
+               text-align: center;
+            }
+             .rectangle-56 {
+               width: 37.38px;
+               margin-left: 7.8% !important;
+               /* margin-right: 0% !important; */
+                height: 77.93px;
+               /* width: 28.38px; */
+                transform: rotate(360deg);
+                top: 12px;
+                /* position: fixed; */
+                z-index: 45;
+                 position: relative;
+               }
+  
+  
+  .rectangle-57 {
+   height: 66.83px;
+      width: 18.41px;
+      background-color:#FBBC04;
+      /* position: fixed; */
+      top: 3px;
+      transform: rotate(378deg);
+      z-index: 9;
+      left: -7px;
+      position: relative;
+  }
+  .disp-line{
+  display: inline-flex !important;
+  }
+  
+  .image{
+  height: 30px;
+      width: 30px !important;
+  }
+  .name{
+    /* height: 13px;
+    width: 70.19px; */
+    color: #000;
+    font-family: "Google Sans";
+    font-size: 10px;
+    /* letter-spacing: 0.05px;
+    line-height: 10px;  */
+    text-align: center;
+    text-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
+    margin-top: 10.6px;
+  }
+  .name1{
+    color: #000;
+    font-family: "Google Sans";
+    font-size: 8.5px;
+    text-align: center;
+    text-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  
+.rectangle-58 {
+  height: 14.69px;
+    width: 76.01px;
+    background-color:#4285F4;
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+.rectangle-60 {
+  height: 14.69px;
+  width: 76.01px;
+  background-color: #4285F4;
+  margin-top: 18%;
+  margin-left: 3%;
+}
+  .dsc-lead {
+        height: 5.21px;
+      
+      color: #000;
+      font-family: 'Banny',
+      sans-serif;
+      font-size: 10px;
+  }
+  .github{
+      height: 9.34px;
+    width: 9.5px;
+    
+    
+    
+  }
+  .icon{
+      height: 9.34px;
+    width: 9.81px;
+    
+  }
+  .card2{
+      height: 77.93px;
+    width: 37.38px;
+    background-color: #4285F4;
+    transform: rotate(347deg);
+  }
+  
+  .align8{
+    margin-left: 55% !important;
+  }
+  
+  .keerthana{
+    margin-left: 30% !important;
+  }
+  .aishwarya{
+    margin-left: 35% !important;
+  }
+  .align9{
+    margin-left: 70% !important;
+  }
+  .col-md-5{
+     margin-left: 10% !important;
+  }
+  
+  .align1{
+      margin-left: 14%!important;
+      
+  }
+
+  .align4{
+    margin-left: 10% !important;
+  }
+  .align6{
+    margin-left:10% !important; 
+  }
+  .sinchana{
+    margin-left: 25% !important;
+  }
+  .align3{
+    margin-left:10% !important;
+  }
+  .align7{
+    margin-left: 50% !important;
+  }
+  
+   .col-sm-5 {
+     margin-left: 20% !important;
+   }
+  .right-ba{
+    position: absolute;
+    right:0;
+    left:0;
+  }
+  
+  .align2{
+      margin-left: 12%!important;
+      
+  }
+  .align5{
+    margin-left: 26% !important;
+    padding-top: 35px;
+  }
+  .chetana {
+    margin-left: 33% !important;
+  }
+  .col-2{
+    margin-left: 15% ;
+  }
+  .col-md-8{
+    margin-left:35% !important;
+  }
+
+  .align4{
+    margin-left:20px;
+  }
+  .team {
+    /* height: 50px;
+    width: 210px; */
+    color: #000;
+    font-family: 'Banny',
+    sans-serif;
+    
+    font-size: 40px;
+    /* letter-spacing: 0.1px;
+    line-height: 22px; */
+    text-align: center;
+  }
+  .together-everyone-achieves-mor {
+    /* height: 16px;
+    width: 289px; */
+    color: #000;
+    font-family: "Google Sans";
+    font-size: 32px;
+    text-align: center;
+    /* letter-spacing: 0.1px;
+    line-height: 18px;
+     */
+  }
+  .none-of-us-is-smart-as-all-of- {
+    /* height: 64px;
+    width: 357px; */
+    color: #000;
+    font-family: "Google Sans";
+    font-size: 25px;
+    text-align: center;
+    /* letter-spacing: 0.13px;
+    line-height: 15px;
+     */
+  }
+  .research-team {
+    /* height: 40px; */
+    /* width: 157.97px; */
+    color:#000;
+    font-family: "Google Sans";
+     font-size: 20px; 
+    /* letter-spacing: 0.16px; */
+    /* line-height: 16px; */
+    text-align:center;
+    
+    
+  }
+  .ui-ux-team {
+    /* height: 30px;
+    width: 108px; */
+    color:#000;
+    font-family: "Google Sans";
+    font-size: 20px;
+    /* letter-spacing: 0.16px; */
+    /* line-height: 16px; */
+    text-align: center;
+  }
+  .web-development-tea {
+    
+    color:#000;
+    font-family: "Google Sans";
+    font-size: 20px;
+    /* letter-spacing: 0.16px;
+    line-height: 16px; */
+    text-align: center;
+    
+    padding-top: 10px;
+    margin-left: 10% !important;
+    
+  }
+  .communication-team {
+    /* height: 30px;
+    width: 205px; */
+    color: #000;
+    font-family: 'Banny',
+'Banny',
+      sans-serif;
+    font-size: 20px;
+    /* letter-spacing: 0.16px;
+    line-height: 16px; */
+    text-align: center;
+    margin-left: 55% !important;
+    margin-top: 40px;
+    
+  }
+  .marketing-team {
+    /* height: 30px;
+    width: 205px; */
+    color: #000;
+    font-family: 'Banny',
+'Banny',
+      sans-serif;
+    font-size: 20px;
+    /* letter-spacing: 0.16px;
+    line-height: 16px; */
+    margin-top: 40px;
+     margin-left:50% !important;
+  }
+  .ml-lead {
+    height: 9.98px;
+    width: 75px;
+    color: #000;
+    font-family: 'Banny',
+'Banny',
+      sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+  .technical-lead {
+    height: 9.98px;
+    width: 75px;
+    color: #000;
+    font-family:'Banny',
+'Banny',
+      sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+  .ar-vr-lead {
+    height: 9.98px;
+    width: 75px;
+    color: #000;
+    font-family:'Banny',
+'Banny',
+      sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+  .graphic-lead {
+    height: 9.98px;
+    width: 75px;
+    color: #000;
+    font-family:'Banny',
+'Banny',
+      sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+  .lead {
+    height: 9px;
+    width: 70px;
+    color: #000;
+    font-family: 'Banny',
+'Banny',
+      sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    line-height: 10px;
+    text-align: center;
+  }
+  .lead1{
+    height: 9px;
+    width: 70px;
+    color: #000;
+    font-family: 'Banny',
+'Banny',
+      sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    line-height: 10px;
+    text-align: center;
+    }
+    .lead2{
+      height: 9px;
+      width: 70px;
+      color: #000;
+      font-family: 'Banny',
+'Banny',
+      sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.1px;
+      line-height: 10px;
+      text-align: center;
+    }
+  
+  .team-member {
+    height: 9.98px;
+    width: 75px;
+    color:#000;
+    font-family: 'Banny',
+'Banny',
+      sans-serif;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+  }
+ .container{
+   margin-right: 20%;
+ }
+@media screen and (max-width:768px) {
+  .align6 {
+    margin-left: 4% !important;
+    margin-right: 6% !important;
+  }
+
+  .align3 {
+    margin-left: 4% !important;
+  }
+   .align4 {
+     margin-left: 3% !important;
+   }
+   .rakshitha {
+     margin-left: 5% !important;
+     margin-right: 7% !important;
+   }
+   .web-development-tea {
+
+     color: #000;
+     font-family: 'Banny',
+'Banny',
+      sans-serif;
+     font-size: 20px;
+     /* letter-spacing: 0.16px;
+    line-height: 16px; */
+     text-align: center;
+
+     padding-top: 10px;
+     margin-left: 28% !important;
+
+   }
+   .align5 {
+     margin-left: 14% !important;
+     padding-top: 35px;
+   }
+   .nidhishree{
+     margin-left: 8% !important;
+   }
+   .chetana{
+     margin-left: 38% !important;
+   }
+   .communication-team {
+     /* height: 30px;
+    width: 205px; */
+     color: #000;
+     font-family: 'Banny',
+      sans-serif;
+     font-size: 20px;
+     /* letter-spacing: 0.16px;
+    line-height: 16px; */
+     text-align: center;
+     margin-left: 4% !important;
+
+   }
+   .align6 {
+     margin-left: 40% !important;
+   }
+   .align7 {
+     margin-left: 14% !important;
+   }
+
+   .sinchana {
+     margin-left: 10% !important;
+   }
+   .col-md-8 {
+     margin-left: 25% !important;
+   }
+    .marketing-team {
+      /* height: 30px;
+    width: 205px; */
+      color: #000;
+
+      font-family: 'Banny',
+      sans-serif;
+      font-size: 20px;
+      /* letter-spacing: 0.16px;
+    line-height: 16px; */
+      margin-left: 4% !important;
+    }
+     .align8 {
+       margin-left: 10% !important;
+     }
+
+     .keerthana {
+       margin-left: 15% !important;
+     }
+
+     .aishwarya {
+       margin-left: 30% !important;
+     }
+
+     .align9 {
+       margin-left: 30% !important;
+     }
+}
+#sweat{
+    text-align:bottom right;
+    width:40px;
+}
+#coders1{
+      color:#FFF;
+}

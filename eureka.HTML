@@ -1,0 +1,135 @@
+<!doctype html>
+ <!-- Still need to add  dark mode and menu bar for mobile -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Eureka!</title>
+  <meta name="description" content="">
+  
+  <meta name="viewport" content="width = device-width, inital-scale=1.0 , minimum-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="rename.css">
+
+</head>
+
+<body>
+    <section class="hidden">
+       <!-- Main Navigation Bar -->
+        <nav class="main-nav sticky-nav-bar">
+
+            <!-- DSC JNNCE Logo -->
+            <div class="main-logo">
+                <a href="index.html"><img src=" img/dsc.png" alt="DSC Logo JNNCE"></a>
+            </div>
+
+            <ul class=" main-ul">
+               <li class="menu-class a-hover-effect" id="home-id"><a href="index.html">Home</a></li>
+               <li class="menu-class a-hover-effect" id="team-id"><a href="card.html">Team</a></li>
+               <li class="menu-class a-hover-effect" id="blog-id"><a href="feed.html">Projects</a></li>
+               <li class="menu-class a-hover-effect" id="eureka-id"><a href="#">Eureka</a>
+               </li>
+               <li class="menu-class a-hover-effect" id="video-id"><a href="videos.html">Video</a></li>
+               <li class="menu-class a-hover-effect" id="contact-id"><a href="index.html#cont">Contact
+                   Us</a>
+               </li>
+               </ul>
+
+
+            <!-- Mobile Navigation -->
+            <div class="burger-logo">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+        <br>
+        <br>
+        <br>
+           <h1><strong>OUR EUREKA</strong></h1>
+           <div class=" row d-flex justify-content-center">
+            <div class = "blackbox col-md-3 col-md-7">
+                 <h2>Problem Statement</h2>
+                 <p><!-- problem statment written here --></p>
+            </div>
+
+        </div>
+         <br>
+        <br>
+        
+             <h3><strong> Challenge ends in</strong></h3>
+             <div class = "row d-flex justify-content-center">
+              <div class = "blackbox1  col-md-6">
+                  <!-- need to add script of clock timer -->
+                  <p id="heading"> Days  Hours  Minutes  Seconds</p>
+                  <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date(" 0:0:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " " + hours + " "
+  + minutes + " " + seconds + " ";
+  
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+              </div>
+        </div>
+         <div>
+         
+         <h3><strong> Submit your solution here</strong></h3>
+         <br>
+         <br>
+            <div class = "container1 row d-flex justify-content-center">
+              <a href="https://forms.gle/8WS2ULEKeJoWQLDw5"><button type = "submit" name = "submit" >Submit</button></a>
+             </div>
+             
+         </div>
+          <br>
+        <br>
+
+         <div>
+             <h3><strong>Code for the solution </strong></h3>
+              <div class = "blackbox2 container">
+                  <h4>Code</h4>
+                      <p><!-- code written here --></p>
+              </div>
+        </div>
+
+         <br>
+        <br>
+            <!--<div>
+             <h3><strong>Best Responses </strong></h3>
+                   <!-- best responses with image are added here -->
+             </div>-->
+
+      </section>
+   <script type=text/javascript src="index.js"></script>
+</body>
+</html>

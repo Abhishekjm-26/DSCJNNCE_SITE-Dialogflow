@@ -1,0 +1,400 @@
+                         * {
+                             margin: 0;
+                             padding: 0;
+                             /* box-sizing: border-box; */
+                             z-index: 0;
+                         }
+
+                         body {
+                             margin: 0;
+                             font-family: "Google Sans";
+                         }
+
+                         /* 
+main{
+    position: relative;
+} */
+                         .main-nav {
+                             display: flex;
+                             /* min-height: 8vh; */
+                             /*padding:20px;*/
+                             /*justify-content: space-around;*/
+                             transition: all 0.5s;
+                             /* box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5); */
+                             background-color: #ffffff;
+                             /* height: 80px; */
+                             z-index: 10;
+                         }
+
+                         .main-logo {
+                             padding: 15px;
+                             width: 100vh;
+                         }
+
+                         .main-logo img {
+                             transform: translateX(10%);
+                             max-width: 100%;
+                             height: auto;
+                         }
+
+                         .main-ul {
+                             display: flex;
+                             justify-content: space-around;
+                             width: 100%;
+                             transition: all 0.3s;
+                             margin-left: 10%;
+                             margin-right: 10%;
+                         }
+
+                         .main-ul>li {
+                             /* font-size: 1.2rem; */
+                             padding: 20px;
+                             list-style: none;
+                         }
+
+                         a {
+                             font-size: 150%;
+                             text-decoration: none;
+                             color: #3a3939;
+                         }
+
+                         .a-hover-effect:hover {
+                             font-weight: 600;
+                             font-size: large;
+                             /* border-bottom: #3a3939 0.125em solid; */
+                             /* box-shadow: rgba(0,0,0,0.8) 0px 1px 1px,inset rgba(0,0,0,0.15) 0px 1px 1px; */
+                         }
+
+                         .burger-logo {
+                             display: none;
+                             cursor: pointer;
+                         }
+
+                         .burger-logo div {
+                             display: flex;
+                             justify-content: space-around;
+                             background-color: #3a3939;
+                             width: 25px;
+                             height: 2px;
+                             margin: 5px;
+                             transform: translateY(27px);
+                             transition: all 0.3s ease;
+                         }
+
+                         .sticky-nav-bar {
+                             position: fixed;
+                             top: 0;
+                             width: 100%;
+                             z-index: 100;
+                         }
+
+
+
+                         .grid {
+                             display: grid;
+                             grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+                             gap: 10px;
+                             /* margin:20px 10px; */
+                         }
+
+                         
+                         @media screen and (max-width:768px) {
+
+                             body {
+                                 overflow-x: hidden;
+                             }
+
+                             .main-ul {
+
+                                 position: absolute;
+                                 height: 100vh;
+
+                                 top: 0;
+                                 background: url(img/tele_girl.jpeg) no-repeat;
+                                 background-size: 100%;
+                                 float: left;
+                                 background-position: right -24vw bottom;
+                                 display: flex;
+                                 flex-direction: column;
+                                 align-items: flex-start;
+                                 width: 100%;
+                                 justify-content: center;
+                                 transform: translateX(100%);
+                                 transition: transform 0.5s ease-in;
+                                 background-color: #D2E3FC;
+                             }
+
+                             .menu-class {
+                                 border-top: 2px solid #D2E3FC;
+                                 border-right: 2px solid #D2E3FC;
+                                 border-bottom: 2px solid #D2E3FC;
+                                 border-radius: 0;
+                                 width: 60vw;
+
+                                 margin: 10px;
+                                 padding: 10px;
+                                 border-radius: 0 30px 30px 0;
+                                 background-color: #ffffff;
+                                 text-align: center;
+                             }
+
+                             .menu-class a {
+
+                                 font-weight: bold;
+                             }
+
+                             /* .main-ul li{
+        opacity: 0;
+    }    */
+                             .burger-logo {
+                                 display: block;
+                                 position: relative;
+                                 transform: translateX(-100%);
+                                 /* transform: translateY(-10px); */
+                             }
+
+                             .projects button {
+                                 transform: translateX(20%);
+                             }
+
+                             .button-flex {
+                                 display: flex;
+                                 flex-direction: column;
+                             }
+
+                             .grid {
+                                 display: grid;
+                                 grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+                                 gap: 20px;
+                                 box-sizing: border-box;
+                                 max-width: 100%;
+                                 /* margin:20px 10px; */
+                             }
+
+
+
+                         }
+
+
+                         .activate-nav-mobile {
+                             transform: translateX(0%);
+                         }
+
+                         .cross .line1 {
+                             transform: rotate(-45deg) translate(-35px, 8px);
+                             background-color: white;
+                         }
+
+                         .cross .line2 {
+                             opacity: 0;
+                         }
+
+                         .cross .line3 {
+                             transform: rotate(45deg) translate(-1px, 25px);
+                             background-color: white;
+                         }
+
+                         .add-shadow {
+                             box-shadow: 0px 2px 2px 0px rgba(60, 64, 67, 0.3);
+                         }
+
+                         
+                        h1 {
+                            height: 11px;
+                            width: 100%;
+                            color: #060606;
+                            font-family: "Google Sans";
+                            font-size: 25px;
+                            font-weight: 700;
+                            letter-spacing: 0.11px;
+                            line-height: 20px;
+                            padding-top: 30px;
+                            padding-bottom: 30px;
+                            padding-left: 20px;
+                        }
+                        
+                        
+                        
+
+                        .container-1{
+                              padding-left: 60px;
+                              width: auto;
+                        }
+
+                        .blackbox {
+                            padding-top: 20px;
+                            height: 150px;
+                            width: 80%;
+                            border-radius: 8px;
+                            background-color:#FFF;
+                            
+                            box-shadow: 4px 6px 6px 4px #D2E3FC;
+                            
+                            align-self: center;
+                        }
+
+                        h2 {
+                            height: 15px;
+                            width: 100%;
+                            color:black;
+                            font-family: "Google Sans";
+                            font-size: 15px;
+                            letter-spacing: 0.1px;
+                            line-height: 11px;
+                        }
+
+                         h3 {
+                             height: 11px;
+                             width: 100%;
+                             color: #060606;
+                             font-family: "Google Sans";
+                             font-size: 20px;
+                             font-weight: 700;
+                             letter-spacing: 0.11px;
+                             line-height: 20px;
+                             padding-top: 30px;
+                             padding-bottom: 30px;
+                             padding-left: 20px;
+                         }
+
+                         .blackbox1 {
+                             
+                             padding-top: 20px;
+                             height: 130px;
+                             width: 60%;
+                             border-radius: 8px;
+                             background-color:#FFF;
+                             box-shadow: 4px 6px 6px 4px #D2E3FC;
+                             padding-left: 35px;
+                             
+                         }
+
+                        [id="demo"] {
+
+                            text-align: center;
+                            font-size: 18px;
+
+                            color:#FFF;
+                            padding-bottom: 5px;
+                            word-spacing: 20px;
+                            font-family: 'Share Tech Mono';
+                            text-shadow: 0 0 20px #4286F5,
+                                0 0 20px rgba(10, 175, 230, 0);
+                            background: radial-gradient(ellipse at center, #4286F5 0%, #FFF 70%);
+                            background-size: 100%;
+                            padding-right: 20px;
+                        }
+
+                        h5 {
+                            width: 5px;
+                            font-display: block;
+                        }
+
+                        [id="heading"] {
+                            padding-top: 5px;
+                            padding-left: 6px;
+                            color: black;
+                            font-size: 10px;
+                            text-align: center;
+                            word-spacing: 10px;
+                        }
+                         .container{
+                             
+                                 
+                                 width: 400px ;
+                                 text-align: center;
+                                 padding-left: 12px;
+                             
+                         }
+
+                         .container .progress {
+
+                            width: 380px auto;
+                            padding-right: 15px;
+                            padding-left: 14px;
+                            
+                            text-align: center;
+                            }
+                             
+                         
+
+                         .progress {
+                             
+                             padding: 7px;
+                             background:#C8C8C8;
+                             border-radius: 6px;
+                             -webkit-box-shadow: inset 0 1px 2px , 0 1px ;
+                             box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px ;
+                         }
+
+                         .progress-bar {
+                             height: 2px;
+                             border-radius: 4px;
+
+                             -webkit-transition: 0.4s linear;
+                             -moz-transition: 0.4s linear;
+                             -o-transition: 0.4s linear;
+                             transition: 0.4s linear;
+                             -webkit-transition-property: width, background-color;
+                             -moz-transition-property: width, background-color;
+                             -o-transition-property: width, background-color;
+                             transition-property: width, background-color;
+                             -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25),
+                             inset 0 1px;
+                             box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px ;
+                         }
+
+                         /*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       https://css-tricks.com/webkit-sibling-bug/
+ */
+
+                         #five:checked~.progress>.progress-bar {
+                             width: 20%;
+                             background-color:#EA3F2E;
+                         }
+
+                         #twentyfive:checked~.progress>.progress-bar {
+                             width: 40%;
+                             background-color: #FBBC03;
+                         }
+
+                         #fifty:checked~.progress>.progress-bar {
+                             width: 60%;
+                             background-color: #3589FE;
+                         }
+
+                         #seventyfive:checked~.progress>.progress-bar {
+                             width: 80%;
+                             background-color: #0AA257;
+                         }
+
+                         #onehundred:checked~.progress>.progress-bar {
+                             width: 100%;
+                             background-color:#EA432F;
+                         }
+
+                         .radio {
+                             display: none;
+                         }
+
+                         .label {
+                             display: -webkit-inline-box;
+                             margin: 0 5px 20px;
+                             padding: 3px 7px;
+                             text-align: center;
+                             
+                             
+                             text-shadow: 0 1px blue;
+                             border-radius: 3px;
+                             cursor: pointer;
+                         }
+
+                         .radio:checked+.label {
+                             color: black;
+                             background: rgba(0, 0, 0, 0.25);
+                         }
+
+                         
