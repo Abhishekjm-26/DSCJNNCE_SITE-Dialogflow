@@ -18,7 +18,9 @@ As DSC-JNNCE lead Yeshwanth P suggested, the second project will be a chatbot us
 By following his instructions our project management lead Abhishek J M took the responsibility to make all DSC members understand what dialogflow is and how it works. It took almost 2 – 3 sessions to understand dialogflow and its working. The interesting part about this project this that we work irrespective of our teams and I think that was the exciting part .
 INTENT CREATORS: Here, we worked in a quite different manner .The intent questions were created by UI/UX team, Marketing team and Research team. The intents were mainly focused on COVID-19 related queries and about the chatbot itself.
 The intents were answered by communication team in order to distribute work accordingly. Coding has no part in this as we used dialogflow. Also one article on full functioning of dialogflow was given by communication team
-DEPLOYMENT: The deployment of chatbot is performed by Yashas Vinay, Neha A Gingade and Gowri H R in a live open seminar. You can watch it on youtube also ………(provide the link if session is recorded).
+DEPLOYMENT: The deployment of chatbot is performed by Yashas Vinay, Neha A Gingade and Gowri H R & Abhishek J M
 PROMOTION: We would like to thank our Marketing lead Arpitha Ag and Graphic Designing lead Anupa Kini and their team members to promote the event by making eye catchy posters and banners and upload them on DSC-JNNCE social media.
+
+Checkout the Bot in the Website Project Portal.
 
 
